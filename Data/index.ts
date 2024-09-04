@@ -1,8 +1,6 @@
-import path from "path";
-import { title } from "process";
-
 export const navItems = [
     { name: "Home", link: "#hero" },
+    { name: "Education", link: "#education" },
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Skills", link: "#skills" },

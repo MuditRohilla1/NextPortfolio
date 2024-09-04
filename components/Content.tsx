@@ -17,7 +17,7 @@ const ThreeDCardDemo = () => {
                         Programming <span className="text-purple"> Skills</span>
                     </h1>
                 </div>
-                <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-4">
+                <div className="flex flex-wrap items-center justify-center gap-4 md:gap-10 max-lg:mt-4">
                     {Programming.map((skill) => (
                         <CardContainer
                             key={skill.id}

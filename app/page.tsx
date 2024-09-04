@@ -1,6 +1,7 @@
 import Approach from "@/components/Approach";
 import Card from "@/components/Card";
 import Content from "@/components/Content";
+import Education from "@/components/Education";
 // import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems}/>
         <Hero/>
+        <Education/>
         <Grid/>
         {/* <Clients/> */}
         <Content/>
