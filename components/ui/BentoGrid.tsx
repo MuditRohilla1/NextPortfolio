@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
 
@@ -68,6 +68,13 @@ export const BentoGridItem = ({
         setCopied(true);
     };
 
+    useEffect(() => {
+        if (copied) {
+            const timer = setTimeout(() => setCopied(false), 3000); // Resets 'copied' after 3 seconds
+            return () => clearTimeout(timer);
+        }
+    }, [copied]);
+
     return (
         <div
             className={cn(
@@ -75,9 +82,7 @@ export const BentoGridItem = ({
                 className
             )}
             style={{
-                background: "rgb(4,7,29)",
-                backgroundColor:
-                    "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+                background: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             }}
         >
             <div className={`${id === 6 && "flex justify-center"} h-full`}>
