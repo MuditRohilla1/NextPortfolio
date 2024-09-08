@@ -109,7 +109,7 @@ export const Frontend = [
     {
         id: 1,
         title: "JavaScript",
-        img: "/javaScript.svg",
+        img: "/javascript.svg",
     },
     {
         id: 1,
@@ -137,7 +137,7 @@ export const backend = [
     {
         id: 1,
         title: "MongoDb",
-        img: "/mongoDB.svg",
+        img: "/mongodb.svg",
     },
     {
         id: 1,
