@@ -3,6 +3,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/Data";
 import { PinContainer } from "./ui/3d-pin";
+import Link from "next/link";
 
 const RecentProjects = () => {
     return (
@@ -11,7 +12,7 @@ const RecentProjects = () => {
                 A small selection of{" "}
                 <span className="text-purple">recent projects</span>
             </h1>
-            <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+            <div className="grid grid-cols-3 items-center justify-center p-4 gap-16 mt-10">
                 {projects.map((item) => (
                     <div
                         className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
@@ -65,9 +66,11 @@ const RecentProjects = () => {
                                 </div>
 
                                 <div className="flex justify-center items-center">
-                                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                                        Check Live Site
-                                    </p>
+                                    <Link href= {item.link} target="blank">
+                                        <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                                            Check Live Site
+                                        </p>
+                                    </Link>
                                     <FaLocationArrow className="ms-3" color="#CBACF9" />
                                 </div>
                             </div>

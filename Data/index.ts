@@ -185,6 +185,22 @@ export const projects = [
         iconLists: ["/re.svg", "/javascript.svg", "/fb.svg", "/html.svg", "/css3.svg"],
         link: "/ui.fusion.com",
     },
+    {
+        id: 5,
+        title: "A Social-Media App",
+        des: "Cloned a Social Media app named TWITTER by taking considerations of some major features and applyign all the functionalites according to it...",
+        img: "/Twitter-rebrands-X.webp",
+        iconLists: ["/re.svg", "/javascript.svg", "/fb.svg", "/html.svg", "/css3.svg"],
+        link: "https://clone-zkw3.onrender.com/",
+    },
+    // {
+    //     id: 6,
+    //     title: "A Portfolio Website",
+    //     des: "Cloned a Social Media app named TWITTER by taking considerations of some major features and applyign all the functionalites according to it...",
+    //     img: "/Twitter-rebrands-X.webp",
+    //     iconLists: ["/re.svg", "/javascript.svg", "/fb.svg", "/html.svg", "/css3.svg"],
+    //     link: "https://clone-zkw3.onrender.com/",
+    // },
 ];
 
 export const testimonials = [
